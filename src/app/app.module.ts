@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PetsComponent } from './pages/pets/pets.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { QueryParamsComponent } from './pages/query-params/query-params.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     PetsComponent,
-    NavbarComponent
+    NavbarComponent,
+    QueryParamsComponent
   ],
   imports: [
     BrowserModule,
