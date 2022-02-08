@@ -28,8 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Homework
 
-1. create component to display server details from server info (child component of server-info)
-2. create button to toggle the status of the selected server ( server-info child component)
+1. create component to display server details from server info ( child component of server-info )
+2. create button to toggle the status of the selected server ( server-info child component )
 3. when server status is
    1. true:
       then in servers route the server button must be green
