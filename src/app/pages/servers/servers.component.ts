@@ -12,6 +12,6 @@ export class ServersComponent implements OnInit {
   constructor(private serversDataService: ServersDataService) {
     this.serverArr = this.serversDataService.serversArr;
   }
-
   ngOnInit(): void {}
+  handleServerClick(chosenServerCode: number): void {}
 }
