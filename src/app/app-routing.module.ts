@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { PageNotFoundTComponent } from './pages/page-not-found-t/page-not-found-t.component';
 import { PetsComponent } from './pages/pets/pets.component';
 import { QueryParamsComponent } from './pages/query-params/query-params.component';
 import { ServerInfoComponent } from './pages/server-info/server-info.component';
@@ -19,6 +20,11 @@ const routes: Routes = [
     path: 'servers',
     component: ServersComponent,
     children: [{ path: 'server-info', component: ServerInfoComponent }],
+  },
+  { path: 'pagenotfoundt', component: PageNotFoundTComponent },
+  {
+    path: '**',
+    redirectTo: '/pagenotfoundt',
   },
 ];
 
