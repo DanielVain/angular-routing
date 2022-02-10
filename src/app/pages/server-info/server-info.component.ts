@@ -24,4 +24,10 @@ export class ServerInfoComponent implements OnInit {
       console.log(this.selectedServer);
     });
   }
+  handleServerStatusChanged(status: boolean): void {
+    this.serversDataService.updateServerStatus(
+      this.selectedServer.code,
+      status
+    );
+  }
 }
