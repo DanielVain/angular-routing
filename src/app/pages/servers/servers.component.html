@@ -9,6 +9,10 @@
           class="list-group-item list-group-item-action"
           *ngFor="let serverItem of serverArr"
           (click)="handleServerClick(serverItem.code)"
+          [ngClass]="{
+            'list-group-item-danger': !serverItem.status,
+            'list-group-item-success': serverItem.status
+          }"
         >
           {{ serverItem.name }}
         </button>
